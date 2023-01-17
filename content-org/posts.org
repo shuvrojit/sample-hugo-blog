@@ -1,0 +1,30 @@
+#+TITLE: Posts
+#+AUTHOR: Shuvrojit Biswas
+
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: ./posts/
+#+HUGO_WEIGHT: auto
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* First Post                                                          :@first:
+This is my first post
+
+** DONE Write your first blog post                                :hugo:org:
+:PROPERTIES:
+:EXPORT_FILE_NAME: write-your-first-blog-post
+:EXPORT_DATE: 2023-01-17
+:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_CUSTOM_FRONT_MATTER: :draft false :cedric yes
+:END:
+
+*** First Heading within the post.
+Let's write a short story which we all can relate to. What do you say.
+
+
+* Third Post
+:PROPERTIES:
+:EXPORT_FILE_NAME: third-post
+:EXPORT_DATE: 2023-01-17
+:END:
+
+** Hi there everybody. We are going to have a lot of fun today.

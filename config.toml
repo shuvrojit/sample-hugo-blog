@@ -1,0 +1,25 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Shuvrojit Biswas | Full Stack Web Developer'
+# theme = 'LoveIt'
+
+MetaDataFormat = "toml"
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[author]
+twitter = 'https://twitter.com/shuv40'
+email = 'shuvrojit.biswas17@gmail.com'
+name = 'Shuvrojit Biswas'
+location = 'Dhaka, Bangladesh'
+
+[Params]
+  description = "The Thought Process of Shuvrojit Biswas"
+  logo = "/logo.png"
+  searchLogo = "/search.svg"
+

@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <main>
+    <h1> this is a section</h1>
+      {{ .Content }}
+          <ul class="contents">
+          {{ range .Paginator.Pages }}
+              <li>{{.Title}}
+                  <div>
+                    {{ partial "summary.html" . }}
+                  </div>
+              </li>
+          {{ end }}
+          </ul>
+  </main>
+{{ end }}

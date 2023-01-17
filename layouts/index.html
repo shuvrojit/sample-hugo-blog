@@ -1,0 +1,7 @@
+{{ define "main"}}
+{{ .Content }}
+ {{ range .Site.RegularPages }}
+          {{ .Render "summary" }}
+      {{ end }}
+
+{{ end }}
