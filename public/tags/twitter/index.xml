@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>twitter on Shuvrojit Biswas | Full Stack Web Developer</title>
+    <link>/tags/twitter/</link>
+    <description>Recent content in twitter on Shuvrojit Biswas | Full Stack Web Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</managingEditor>
+    <webMaster>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</webMaster><atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My first Post</title>
+      <link>/posts/first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/first-post/</guid>
+      <description>Elaborate Piece of shit. nice to know you.</description>
+    </item>
+    
+    <item>
+      <title>My Sceond Post</title>
+      <link>/posts/sceond-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/sceond-post/</guid>
+      <description>Nice to see you all healty. </description>
+    </item>
+    
+  </channel>
+</rss>

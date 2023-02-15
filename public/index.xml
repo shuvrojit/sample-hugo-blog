@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Thought Process of Shuvrojit Biswas on Shuvrojit Biswas | Full Stack Web Developer</title>
+    <link>/</link>
+    <description>Recent content in The Thought Process of Shuvrojit Biswas on Shuvrojit Biswas | Full Stack Web Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</managingEditor>
+    <webMaster>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</webMaster>
+    <lastBuildDate>Wed, 18 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Story</title>
+      <link>/stories/first-story/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/stories/first-story/</guid>
+      <description>There are no people around here. Pellentesque dapibus suscipit ligula. Donec posuere augue in quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.</description>
+    </item>
+    
+    <item>
+      <title>Third Post</title>
+      <link>/posts/third-post/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/third-post/</guid>
+      <description>Hi there everybody. We are going to have a lot of fun today. </description>
+    </item>
+    
+    <item>
+      <title>New Post for making hugo shine</title>
+      <link>/posts/new-post/</link>
+      <pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/new-post/</guid>
+      <description>The First One always strucks out. Phasellus at dui in ligula mollis ultricies. Nullam tempus. Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet quis, semper a, massa.</description>
+    </item>
+    
+    <item>
+      <title>Emacs User Interface</title>
+      <link>/posts/emacs-user-interface/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/emacs-user-interface/</guid>
+      <description>Aliquam erat volutpat. Nunc eleifend leo vitae magna. In id erat non orci commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui dignissim bibendum. Vivamus id enim. Phasellus neque orci, porta a, aliquet quis, semper a, massa. Phasellus purus. Pellentesque tristique imperdiet tortor. Nam euismod tellus id erat.</description>
+    </item>
+    
+    <item>
+      <title>IMAGE and Code</title>
+      <link>/posts/new-and-easy/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/new-and-easy/</guid>
+      <description>Now there Pellentesque dapibus suscipit ligula. Donec posuere augue in quam. Etiam vel tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean in sem ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at dui in ligula mollis ultricies. Integer placerat tristique nisl. Praesent augue. Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.</description>
+    </item>
+    
+    <item>
+      <title>My first Post</title>
+      <link>/posts/first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/first-post/</guid>
+      <description>Elaborate Piece of shit. nice to know you.</description>
+    </item>
+    
+    <item>
+      <title>My Sceond Post</title>
+      <link>/posts/sceond-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/posts/sceond-post/</guid>
+      <description>Nice to see you all healty. </description>
+    </item>
+    
+  </channel>
+</rss>

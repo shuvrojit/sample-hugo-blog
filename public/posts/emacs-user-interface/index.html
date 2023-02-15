@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Welcome to my personal website. My name is Shuvrojit Biswas and  I am Software Engineer with a passion for technology. On this site, I dump my thoughts and experiment with them.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Shuvrojit Biswas | Full Stack Web Developer</title>
+  
+  <link rel="stylesheet" href="/styles.min.aa8e5bcac15fe5763f49a1bd18b62780adbfb3fc98bb914b09eb9d73114ad46d.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<header>
+  <nav>
+    <ul class="navbar">
+      <li><a href="/"><img class="logo" src="/logo.png" alt="Shuvrojit Biswas | Full Stack Web Developer" /> </a></li>
+      <li><a href="/stories">Stories</a></li>
+      <li><a href="/posts">Posts</a></li>
+      <li><a href="/about">About Me </a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/"><img class="search" src="/search.svg" alt="search" />  </a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="container">
+<main>
+
+<div class="content">
+<section>
+  <h1>Emacs User Interface</h1>
+  <p>Created At Tue Jan 17, 2023</p>
+  <p>Last Modified: Sun Jan 22, 2023 05:37</p>
+  <p>4 minutes to read</p>
+
+
+ 
+<ul>
+   <li>
+    <a href="/tags/ui/">ui</a>
+  </li> <li>
+    <a href="/tags/ux/">ux</a>
+  </li> <li>
+    <a href="/tags/emacs/">emacs</a>
+  </li> <li>
+    <a href="/tags/interface/">interface</a>
+  </li></ul>
+
+
+  <div class="table-of-contents">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hide-ugliness">Hide ugliness</a></li>
+    <li><a href="#improve-scrolling">Improve Scrolling</a></li>
+    <li><a href="#frame-transparency">Frame transparency</a></li>
+    <li><a href="#line-numbers">Line numbers</a></li>
+    <li><a href="#font">Font</a></li>
+    <li><a href="#modus-theme">Modus Theme</a></li>
+    <li><a href="#ef-themes">ef-themes</a></li>
+    <li><a href="#beacon">Beacon</a></li>
+    <li><a href="#emoji">Emoji</a></li>
+    <li><a href="#all-the-icons">All the icons <span class="tag"><span class="icons">icons</span></span></a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#solarized-theme-plus-modeline">Solarized Theme+Modeline</a></li>
+    <li><a href="#ewal">Ewal</a></li>
+    <li><a href="#emacs-mini-frame">Emacs Mini frame</a></li>
+  </ul>
+</nav>
+  </div>
+  <div>
+    <article>
+      <p>Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.</p>
+<h2 id="hide-ugliness">Hide ugliness</h2>
+<p>Disable all the useless startup ui&rsquo;s. It will start in the scratch buffer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq
+</span></span><span style="display:flex;"><span> inhibit-startup-message <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span> visible-bell <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span> initial-scratch-message <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">;; Save existing clipboard text into the kill ring before replacing it.</span>
+</span></span><span style="display:flex;"><span> save-interprogram-paste-before-kill <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">;; when I say to quit, I mean quit</span>
+</span></span><span style="display:flex;"><span> confirm-kill-processes <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span> )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(scroll-bar-mode <span style="color:#ae81ff">-1</span>)
+</span></span><span style="display:flex;"><span>(tool-bar-mode <span style="color:#ae81ff">-1</span>)
+</span></span><span style="display:flex;"><span>(tooltip-mode <span style="color:#ae81ff">-1</span>)
+</span></span><span style="display:flex;"><span>(menu-bar-mode <span style="color:#ae81ff">-1</span>)
+</span></span></code></pre></div><h2 id="improve-scrolling">Improve Scrolling</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq mouse-wheel-scroll-amount <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">1</span> ((shift) <span style="color:#f92672">.</span> <span style="color:#ae81ff">1</span>))) <span style="color:#75715e">;; one line at a time</span>
+</span></span><span style="display:flex;"><span>(setq mouse-wheel-progressive-speed <span style="color:#66d9ef">nil</span>) <span style="color:#75715e">;; don&#39;t accelerate scrolling</span>
+</span></span><span style="display:flex;"><span>(setq mouse-wheel-follow-mouse <span style="color:#e6db74">&#39;t</span>) <span style="color:#75715e">;; scroll window under mouse</span>
+</span></span><span style="display:flex;"><span>(setq scroll-step <span style="color:#ae81ff">1</span>) <span style="color:#75715e">;; keyboard scroll one line at a time</span>
+</span></span></code></pre></div><h2 id="frame-transparency">Frame transparency</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(set-frame-parameter (<span style="color:#a6e22e">selected-frame</span>) <span style="color:#e6db74">&#39;alpha</span> <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">99</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">99</span>))
+</span></span><span style="display:flex;"><span>(add-to-list <span style="color:#e6db74">&#39;default-frame-alist</span> <span style="color:#f92672">&#39;</span>(alpha <span style="color:#f92672">.</span> (<span style="color:#ae81ff">99</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">99</span>)))
+</span></span><span style="display:flex;"><span>(set-frame-parameter (<span style="color:#a6e22e">selected-frame</span>) <span style="color:#e6db74">&#39;fullscreen</span> <span style="color:#e6db74">&#39;maximized</span>)
+</span></span><span style="display:flex;"><span>(add-to-list <span style="color:#e6db74">&#39;default-frame-alist</span> <span style="color:#f92672">&#39;</span>(fullscreen <span style="color:#f92672">.</span> maximized))
+</span></span></code></pre></div><h2 id="line-numbers">Line numbers</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(column-number-mode)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; Enable line numbers for some modes</span>
+</span></span><span style="display:flex;"><span>(dolist (mode <span style="color:#f92672">&#39;</span>(text-mode-hook
+</span></span><span style="display:flex;"><span>                prog-mode-hook
+</span></span><span style="display:flex;"><span>                conf-mode-hook))
+</span></span><span style="display:flex;"><span>  (add-hook mode (lambda () (display-line-numbers-mode <span style="color:#66d9ef">t</span>))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; Override some modes which derive from the above</span>
+</span></span><span style="display:flex;"><span>(dolist (mode <span style="color:#f92672">&#39;</span>(org-mode-hook))
+</span></span><span style="display:flex;"><span>  (add-hook mode (lambda () (display-line-numbers-mode <span style="color:#ae81ff">0</span>))))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;Don&#39;t warn for large files (shows up when launching videos)</span>
+</span></span><span style="display:flex;"><span>(setq large-file-warning-threshold <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;Don&#39;t warn for following symlinked files</span>
+</span></span><span style="display:flex;"><span>(setq vc-follow-symlinks <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;Don&#39;t warn when advice is added for functions</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;(setq ad-redefinition-action &#39;accept)</span>
+</span></span></code></pre></div><h2 id="font">Font</h2>
+<p>need to write something about fonts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;; Set the fixed pitch face</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; sets up org source blocks</span>
+</span></span><span style="display:flex;"><span>(set-face-attribute <span style="color:#e6db74">&#39;fixed-pitch</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    :font <span style="color:#e6db74">&#34;Hack&#34;</span>
+</span></span><span style="display:flex;"><span>                    :weight <span style="color:#e6db74">&#39;light</span>
+</span></span><span style="display:flex;"><span>                    :height <span style="color:#ae81ff">150</span>
+</span></span><span style="display:flex;"><span>                    )
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;sets up modeline text, code text</span>
+</span></span><span style="display:flex;"><span>(set-face-attribute <span style="color:#e6db74">&#39;default</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    :font <span style="color:#e6db74">&#34;Hack&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">;; :font &#34;Cascadia Code&#34;</span>
+</span></span><span style="display:flex;"><span>                    :height <span style="color:#ae81ff">150</span>
+</span></span><span style="display:flex;"><span>                    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; Set the variable pitch face</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;sets up org mode header</span>
+</span></span><span style="display:flex;"><span>(set-face-attribute <span style="color:#e6db74">&#39;variable-pitch</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">;; :font &#34;Cantarell&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">;; :font &#34;Inconsolata&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">;; :font &#34;ETbookOT&#34;</span>
+</span></span><span style="display:flex;"><span>                    :font <span style="color:#e6db74">&#34;Fira Code&#34;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">;; :font &#34;Times New Roman&#34;</span>
+</span></span><span style="display:flex;"><span>                    :weight <span style="color:#e6db74">&#39;light</span>
+</span></span><span style="display:flex;"><span>                    :height <span style="color:#ae81ff">170</span>)
+</span></span></code></pre></div><h2 id="modus-theme">Modus Theme</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package modus-themes
+</span></span><span style="display:flex;"><span>  :ensure
+</span></span><span style="display:flex;"><span>  :init
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">;; Add all your customizations prior to loading the themes</span>
+</span></span><span style="display:flex;"><span>  (setq modus-themes-italic-constructs <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>        modus-themes-bold-constructs <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>        modus-themes-region <span style="color:#f92672">&#39;</span>(accented bg-only)
+</span></span><span style="display:flex;"><span>        modus-themes-modeline <span style="color:#f92672">&#39;</span>(accented borderless padded)
+</span></span><span style="display:flex;"><span>        modus-themes-paren-match <span style="color:#f92672">&#39;</span>(bold intense)
+</span></span><span style="display:flex;"><span>        modus-themes-markup <span style="color:#f92672">&#39;</span>(bold underline)
+</span></span><span style="display:flex;"><span>        modus-themes-org-blocks <span style="color:#f92672">&#39;</span>(tinted-background)
+</span></span><span style="display:flex;"><span>        modus-themes-headings
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#39;</span>((<span style="color:#ae81ff">1</span> <span style="color:#f92672">.</span> (background overline variable-pitch <span style="color:#ae81ff">1.5</span>))
+</span></span><span style="display:flex;"><span>          (<span style="color:#ae81ff">2</span> <span style="color:#f92672">.</span> (overline rainbow <span style="color:#ae81ff">1.3</span>))
+</span></span><span style="display:flex;"><span>          (<span style="color:#ae81ff">3</span> <span style="color:#f92672">.</span> (overline <span style="color:#ae81ff">1.1</span>))
+</span></span><span style="display:flex;"><span>          (<span style="color:#66d9ef">t</span> <span style="color:#f92672">.</span> (monochrome)))
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">;; Load the theme files before enabling a theme</span>
+</span></span><span style="display:flex;"><span>  (modus-themes-load-themes)
+</span></span><span style="display:flex;"><span>  :config
+</span></span><span style="display:flex;"><span>  (modus-themes-load-vivendi)
+</span></span><span style="display:flex;"><span>  :bind (<span style="color:#e6db74">&#34;&lt;f5&gt;&#34;</span> <span style="color:#f92672">.</span> modus-themes-toggle))
+</span></span></code></pre></div><h2 id="ef-themes">ef-themes</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;; (require &#39;ef-themes)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; The themes we provide:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; Light: `ef-day&#39;, `ef-light&#39;, `ef-spring&#39;, `ef-summer&#39;.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; Dark:  `ef-autumn&#39;, `ef-dark&#39;, `ef-night&#39;, `ef-winter&#39;.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; We also provide these commands, but do not assign them to any key:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; - `ef-themes-select&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; - `ef-themes-load-random&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; - `ef-themes-preview-colors&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; - `ef-themes-preview-colors-current&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(use-package ef-themes
+</span></span><span style="display:flex;"><span>  :config
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">;; Disable all other themes to avoid awkward blending:</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">mapc</span> <span style="color:#a6e22e">#&#39;</span>disable-theme custom-enabled-themes)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">;; Load the theme of choice:</span>
+</span></span><span style="display:flex;"><span>  (load-theme <span style="color:#e6db74">&#39;ef-spring</span><span style="color:#f92672">&#39;</span> :no-confirm)
+</span></span><span style="display:flex;"><span>  (load-theme <span style="color:#e6db74">&#39;ef-winter</span><span style="color:#f92672">&#39;</span> :no-confirm)
+</span></span><span style="display:flex;"><span>  (load-theme <span style="color:#e6db74">&#39;ef-summer</span><span style="color:#f92672">&#39;</span> :no-confirm)
+</span></span><span style="display:flex;"><span>  (load-theme <span style="color:#e6db74">&#39;ef-night</span><span style="color:#f92672">&#39;</span> :no-confirm)
+</span></span><span style="display:flex;"><span>  (load-theme <span style="color:#e6db74">&#39;ef-day</span><span style="color:#f92672">&#39;</span> :no-confirm)
+</span></span><span style="display:flex;"><span>  (load-theme <span style="color:#e6db74">&#39;ef-autumn</span><span style="color:#f92672">&#39;</span> :no-confirm)
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(ef-themes-load-random <span style="color:#e6db74">&#39;light</span>)
+</span></span></code></pre></div><h2 id="beacon">Beacon</h2>
+<p>A beacon shinning on your point man.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package beacon
+</span></span><span style="display:flex;"><span>  :init
+</span></span><span style="display:flex;"><span>  (setq beacon-blink-when-point-moves <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>  (setq beacon-blink-when-window-change <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>  (setq beacon-blink-when-window-scrolls <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>  (beacon-mode <span style="color:#ae81ff">1</span>))
+</span></span></code></pre></div><h2 id="emoji">Emoji</h2>
+<p>Emoji support on emacs. :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package emojify
+</span></span><span style="display:flex;"><span>  :hook (erc-mode <span style="color:#f92672">.</span> emojify-mode))
+</span></span><span style="display:flex;"><span>(add-hook <span style="color:#e6db74">&#39;after-init-hook</span> <span style="color:#a6e22e">#&#39;</span>global-emojify-mode)
+</span></span></code></pre></div><h2 id="all-the-icons">All the icons <span class="tag"><span class="icons">icons</span></span></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package all-the-icons)
+</span></span></code></pre></div><h2 id="dashboard">Dashboard</h2>
+<p>A dashboard that&rsquo;s gonna open everytime you open emacs</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package dashboard
+</span></span><span style="display:flex;"><span>  :ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>  :config
+</span></span><span style="display:flex;"><span>  (dashboard-setup-startup-hook))
+</span></span></code></pre></div><h2 id="solarized-theme-plus-modeline">Solarized Theme+Modeline</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;;; module-solarized.el --- solarized module for my emacs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; Author: Mark Feller &lt;mark.feller@member.fsf.org&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; This file is not part of GNU Emacs.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; This file is free software; you can redistribute it and/or modify</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; it under the terms of the GNU General Public License as published by</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; the Free Software Foundation; either version 3, or (at your option)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; any later version.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; This file is distributed in the hope that it will be useful,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; GNU General Public License for more details.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; You should have received a copy of the GNU General Public License</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; along with this file.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;; Commentary:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;; Code:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(use-package solarized-theme
+</span></span><span style="display:flex;"><span>  :config
+</span></span><span style="display:flex;"><span>  (progn (setq solarized-emphasize-indicators <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>               solarized-high-contrast-mode-line <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>               solarized-scale-org-headlines <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>               solarized-use-less-bold <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>               solarized-use-variable-pitch <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>               solarized-distinct-fringe-background <span style="color:#66d9ef">nil</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(use-package all-the-icons
+</span></span><span style="display:flex;"><span>  :demand
+</span></span><span style="display:flex;"><span>  :init
+</span></span><span style="display:flex;"><span>  (progn (defun -custom-modeline-github-vc ()
+</span></span><span style="display:flex;"><span>           (let ((branch (<span style="color:#a6e22e">mapconcat</span> <span style="color:#e6db74">&#39;concat</span> (<span style="color:#a6e22e">cdr</span> (split-string vc-mode <span style="color:#e6db74">&#34;[:-]&#34;</span>)) <span style="color:#e6db74">&#34;-&#34;</span>)))
+</span></span><span style="display:flex;"><span>             (<span style="color:#a6e22e">concat</span>
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">propertize</span> (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34; %s&#34;</span> (all-the-icons-octicon <span style="color:#e6db74">&#34;git-branch&#34;</span>))
+</span></span><span style="display:flex;"><span>                          <span style="color:#e6db74">&#39;face</span> <span style="color:#f92672">`</span>(:height <span style="color:#ae81ff">1</span> :family <span style="color:#f92672">,</span>(all-the-icons-octicon-family))
+</span></span><span style="display:flex;"><span>                          <span style="color:#e6db74">&#39;display</span> <span style="color:#f92672">&#39;</span>(raise <span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">propertize</span> (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34; %s&#34;</span> branch))
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">propertize</span> <span style="color:#e6db74">&#34;  &#34;</span>))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         (defun -custom-modeline-svn-vc ()
+</span></span><span style="display:flex;"><span>           (let ((revision (cadr (split-string vc-mode <span style="color:#e6db74">&#34;-&#34;</span>))))
+</span></span><span style="display:flex;"><span>             (<span style="color:#a6e22e">concat</span>
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">propertize</span> (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34; %s&#34;</span> (all-the-icons-faicon <span style="color:#e6db74">&#34;cloud&#34;</span>))
+</span></span><span style="display:flex;"><span>                          <span style="color:#e6db74">&#39;face</span> <span style="color:#f92672">`</span>(:height <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>                          <span style="color:#e6db74">&#39;display</span> <span style="color:#f92672">&#39;</span>(raise <span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">propertize</span> (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34; %s&#34;</span> revision) <span style="color:#e6db74">&#39;face</span> <span style="color:#f92672">`</span>(:height <span style="color:#ae81ff">0.9</span>)))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         (defvar mode-line-my-vc
+</span></span><span style="display:flex;"><span>           <span style="color:#f92672">&#39;</span>(:propertize
+</span></span><span style="display:flex;"><span>             (:eval (when vc-mode
+</span></span><span style="display:flex;"><span>                      (cond
+</span></span><span style="display:flex;"><span>                       ((<span style="color:#a6e22e">string-match</span> <span style="color:#e6db74">&#34;Git[:-]&#34;</span> vc-mode) (-custom-modeline-github-vc))
+</span></span><span style="display:flex;"><span>                       ((<span style="color:#a6e22e">string-match</span> <span style="color:#e6db74">&#34;SVN-&#34;</span> vc-mode) (-custom-modeline-svn-vc))
+</span></span><span style="display:flex;"><span>                       (<span style="color:#66d9ef">t</span> (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34;%s&#34;</span> vc-mode)))))
+</span></span><span style="display:flex;"><span>             face mode-line-directory)
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;Formats the current directory.&#34;</span>))
+</span></span><span style="display:flex;"><span>  :config
+</span></span><span style="display:flex;"><span>  (progn
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;; (setq-default mode-line-format</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;               (list</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                evil-mode-line-tag</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-front-space</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-mule-info</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-modified</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-frame-identification</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-buffer-identification</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                &#34; &#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-position</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-my-vc</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;;                mode-line-modes))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">;; (concat evil-mode-line-tag)</span>
+</span></span><span style="display:flex;"><span>    ))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (bind-keys (&#34;C-c tl&#34; . (lambda () (interactive) (load-theme &#39;solarized-light)))</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;            (&#34;C-c td&#34; . (lambda () (interactive) (load-theme &#39;solarized-dark))))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(load-theme <span style="color:#e6db74">&#39;solarized-light</span> <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(set-face-attribute <span style="color:#e6db74">&#39;mode-line</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    :background <span style="color:#e6db74">&#34;#eee8d5&#34;</span>
+</span></span><span style="display:flex;"><span>                    :foreground <span style="color:#e6db74">&#34;#657b83&#34;</span>
+</span></span><span style="display:flex;"><span>                    :box <span style="color:#f92672">&#39;</span>(:line-width <span style="color:#ae81ff">4</span> :color <span style="color:#e6db74">&#34;#eee8d5&#34;</span>)
+</span></span><span style="display:flex;"><span>                    :overline <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    :underline <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(set-face-attribute <span style="color:#e6db74">&#39;mode-line-inactive</span> <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    :background <span style="color:#e6db74">&#34;#fdf6e3&#34;</span>
+</span></span><span style="display:flex;"><span>                    :foreground <span style="color:#e6db74">&#34;#93a1a1&#34;</span>
+</span></span><span style="display:flex;"><span>                    :box <span style="color:#f92672">&#39;</span>(:line-width <span style="color:#ae81ff">4</span> :color <span style="color:#e6db74">&#34;#eee8d5&#34;</span>)
+</span></span><span style="display:flex;"><span>                    :overline <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>                    :underline <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(define-minor-mode minor-mode-blackout-mode
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Hides minor modes from the mode line.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(catch <span style="color:#e6db74">&#39;done</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">mapc</span> (lambda (x)
+</span></span><span style="display:flex;"><span>          (when (and (<span style="color:#a6e22e">consp</span> x)
+</span></span><span style="display:flex;"><span>                     (<span style="color:#a6e22e">equal</span> (cadr x) <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;&#34;</span> minor-mode-alist)))
+</span></span><span style="display:flex;"><span>            (let ((original (<span style="color:#a6e22e">copy-sequence</span> x)))
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">setcar</span> x <span style="color:#e6db74">&#39;minor-mode-blackout-mode</span>)
+</span></span><span style="display:flex;"><span>              (<span style="color:#a6e22e">setcdr</span> x (<span style="color:#a6e22e">list</span> <span style="color:#e6db74">&#34;&#34;</span> original)))
+</span></span><span style="display:flex;"><span>            (throw <span style="color:#e6db74">&#39;done</span> <span style="color:#66d9ef">t</span>)))
+</span></span><span style="display:flex;"><span>        mode-line-modes))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(global-set-key (kbd <span style="color:#e6db74">&#34;C-c m&#34;</span>) <span style="color:#e6db74">&#39;minor-mode-blackout-mode</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; ;; window dividers</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (window-divider-mode t)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (setq window-divider-default-right-width 2)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (set-face-attribute &#39;window-divider nil :foreground &#34;#eee8d5&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (set-face-attribute &#39;window-divider-first-pixel nil :foreground &#34;#eee8d5&#34;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (set-face-attribute &#39;window-divider-last-pixel nil :foreground &#34;#eee8d5&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(provide <span style="color:#e6db74">&#39;module-solarized</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">;;; module-solarized.el ends here</span>
+</span></span></code></pre></div><h2 id="ewal">Ewal</h2>
+<p>Based on pywal. You can find more about  pywal in arch.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package ewal
+</span></span><span style="display:flex;"><span>  :init (setq ewal-use-built-in-always-p <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>              ewal-use-built-in-on-failure-p <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>              ewal-built-in-palette <span style="color:#e6db74">&#34;sexy-material&#34;</span>))
+</span></span><span style="display:flex;"><span>(use-package ewal-spacemacs-themes
+</span></span><span style="display:flex;"><span>  :init (progn
+</span></span><span style="display:flex;"><span>          (setq spacemacs-theme-underline-parens <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>                my:rice:font (<span style="color:#a6e22e">font-spec</span>
+</span></span><span style="display:flex;"><span>                              :family <span style="color:#e6db74">&#34;Source Code Pro&#34;</span>
+</span></span><span style="display:flex;"><span>                              :weight <span style="color:#e6db74">&#39;semi-bold</span>
+</span></span><span style="display:flex;"><span>                              :size <span style="color:#ae81ff">11.0</span>))
+</span></span><span style="display:flex;"><span>          (show-paren-mode <span style="color:#ae81ff">+1</span>)
+</span></span><span style="display:flex;"><span>          (global-hl-line-mode)
+</span></span><span style="display:flex;"><span>          (set-frame-font my:rice:font <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>          (add-to-list  <span style="color:#e6db74">&#39;default-frame-alist</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">`</span>(font <span style="color:#f92672">.</span> <span style="color:#f92672">,</span>(<span style="color:#a6e22e">font-xlfd-name</span> my:rice:font))))
+</span></span><span style="display:flex;"><span>  :config (progn
+</span></span><span style="display:flex;"><span>            (load-theme <span style="color:#e6db74">&#39;ewal-spacemacs-modern</span> <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>            (enable-theme <span style="color:#e6db74">&#39;ewal-spacemacs-modern</span>)))
+</span></span><span style="display:flex;"><span>(use-package ewal-evil-cursors
+</span></span><span style="display:flex;"><span>  :after (ewal-spacemacs-themes)
+</span></span><span style="display:flex;"><span>  :config (ewal-evil-cursors-get-colors
+</span></span><span style="display:flex;"><span>           :apply <span style="color:#66d9ef">t</span> :spaceline <span style="color:#66d9ef">t</span>))
+</span></span><span style="display:flex;"><span>(use-package spaceline
+</span></span><span style="display:flex;"><span>  :after (ewal-evil-cursors winum)
+</span></span><span style="display:flex;"><span>  :init (setq powerline-default-separator <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>  :config (spaceline-spacemacs-theme))
+</span></span></code></pre></div><h2 id="emacs-mini-frame">Emacs Mini frame</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package mini-frame)
+</span></span><span style="display:flex;"><span>(setq x-gtk-resize-child-frames <span style="color:#e6db74">&#39;resize-mode</span>)
+</span></span><span style="display:flex;"><span>(custom-set-variables
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">&#39;</span>(mini-frame-show-parameters
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&#39;</span>((top <span style="color:#f92672">.</span> <span style="color:#ae81ff">400</span>)
+</span></span><span style="display:flex;"><span>     (width <span style="color:#f92672">.</span> <span style="color:#ae81ff">0.7</span>)
+</span></span><span style="display:flex;"><span>     (left <span style="color:#f92672">.</span> <span style="color:#ae81ff">0.5</span>))))
+</span></span></code></pre></div>
+    </article>
+  </div>
+</section>
+
+
+<aside>
+  <div class="section-aside">
+    
+    <a class="previous" href="/posts/new-and-easy/"> IMAGE and Code</a>
+    
+    
+    <a class="next" href="/posts/new-post/"> New Post for making hugo shine</a>
+    
+  </div>
+</aside>
+</div>
+
+</main>
+</div>
+<footer>
+</footer>
+
+</html>

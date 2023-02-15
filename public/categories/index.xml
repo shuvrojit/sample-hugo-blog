@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Shuvrojit Biswas | Full Stack Web Developer</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Shuvrojit Biswas | Full Stack Web Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</managingEditor>
+    <webMaster>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</webMaster>
+    <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>coding</title>
+      <link>/categories/coding/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>/categories/emacs/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>story</title>
+      <link>/categories/story/</link>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <author>shuvrojit.biswas17@gmail.com (Shuvrojit Biswas)</author>
+      <guid>/categories/story/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
