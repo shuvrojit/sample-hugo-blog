@@ -1,77 +1,22 @@
-#+TITLE: Posts
-#+AUTHOR: Shuvrojit Biswas
-
-#+HUGO_BASE_DIR: ../
-#+HUGO_SECTION: ./posts/
-#+HUGO_WEIGHT: auto
-#+HUGO_AUTO_SET_LASTMOD: t
-
-* First Post                                                          :@first:
-This is my first post
-
-** DONE Write your first blog post                                :hugo:org:
-:PROPERTIES:
-:EXPORT_FILE_NAME: write-your-first-blog-post
-:EXPORT_DATE: 2023-01-17
-:EXPORT_HUGO_MENU: :menu "main"
-:EXPORT_CUSTOM_FRONT_MATTER: :draft false :cedric yes
-:END:
-
-*** First Heading within the post.
-Let's write a short story which we all can relate to. What do you say.
-
-
-* Third Post
-:PROPERTIES:
-:EXPORT_FILE_NAME: third-post
-:EXPORT_DATE: 2023-01-17
-:END:
-
-** Hi there everybody. We are going to have a lot of fun today.
-* New Post for making hugo shine
-:PROPERTIES:
-:EXPORT_FILE_NAME: new-post
-:EXPORT_DATE: 2023-01-18
-:END:
-
-** The First One always strucks out.
-
-Phasellus at dui in ligula mollis ultricies.  Nullam tempus.  Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
-
-Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-
-** Sceond heading
-
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
-
-Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
-
-** Third Heading
-
-Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
-
-Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
-
-* Emacs User Interface                         :@emacs:ui:ux:emacs:interface:
-:PROPERTIES:
-:EXPORT_FILE_NAME: emacs-user-interface
-:EXPORT_DATE: 2023-01-17
-:END:
-
++++
+title = "Emacs User Interface"
+author = ["Shuvrojit Biswas"]
+date = 2023-01-17
+lastmod = 2023-01-22T05:37:30+06:00
+tags = ["ui", "ux", "emacs", "interface"]
+categories = ["emacs"]
+draft = false
+weight = 1003
++++
 
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
 
 
-
-** Hide ugliness
+## Hide ugliness {#hide-ugliness}
 
 Disable all the useless startup ui's. It will start in the scratch buffer.
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (setq
  inhibit-startup-message t
  visible-bell t
@@ -86,34 +31,32 @@ Disable all the useless startup ui's. It will start in the scratch buffer.
 (tool-bar-mode -1)
 (tooltip-mode -1)
 (menu-bar-mode -1)
-#+end_src
+```
 
-#+RESULTS:
 
-** Improve Scrolling
+## Improve Scrolling {#improve-scrolling}
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time
-#+end_src
+```
 
-** Frame transparency
 
-#+begin_src emacs-lisp
+## Frame transparency {#frame-transparency}
+
+```emacs-lisp
 (set-frame-parameter (selected-frame) 'alpha '(99 . 99))
 (add-to-list 'default-frame-alist '(alpha . (99 . 99)))
 (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
-#+end_src
+```
 
-#+RESULTS:
-: ((fullscreen . maximized) (alpha 99 . 99) (vertical-scroll-bars))
 
-** Line numbers
+## Line numbers {#line-numbers}
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (column-number-mode)
 
 ;; Enable line numbers for some modes
@@ -125,9 +68,9 @@ Disable all the useless startup ui's. It will start in the scratch buffer.
 ;; Override some modes which derive from the above
 (dolist (mode '(org-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
-#+end_src
+```
 
-#+begin_src emacs-lisp
+```emacs-lisp
 ;Don't warn for large files (shows up when launching videos)
 (setq large-file-warning-threshold nil)
 
@@ -136,13 +79,14 @@ Disable all the useless startup ui's. It will start in the scratch buffer.
 
 ;Don't warn when advice is added for functions
 ;;(setq ad-redefinition-action 'accept)
-#+end_src
+```
 
-** Font
+
+## Font {#font}
 
 need to write something about fonts.
 
-#+begin_src emacs-lisp
+```emacs-lisp
 ;; Set the fixed pitch face
 ;; sets up org source blocks
 (set-face-attribute 'fixed-pitch nil
@@ -167,13 +111,12 @@ need to write something about fonts.
                     ;; :font "Times New Roman"
                     :weight 'light
                     :height 170)
-#+end_src
+```
 
-#+RESULTS:
 
-** Modus Theme
+## Modus Theme {#modus-theme}
 
-#+begin_src emacs-lisp :tangle no
+```emacs-lisp
 (use-package modus-themes
   :ensure
   :init
@@ -197,12 +140,12 @@ need to write something about fonts.
   :config
   (modus-themes-load-vivendi)
   :bind ("<f5>" . modus-themes-toggle))
+```
 
-#+end_src
 
-** ef-themes
+## ef-themes {#ef-themes}
 
-#+begin_src emacs-lisp
+```emacs-lisp
 ;; (require 'ef-themes)
 ;; The themes we provide:
 ;;
@@ -231,55 +174,56 @@ need to write something about fonts.
   )
 
 (ef-themes-load-random 'light)
-#+end_src
+```
 
-** Beacon
+
+## Beacon {#beacon}
 
 A beacon shinning on your point man.
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (use-package beacon
   :init
   (setq beacon-blink-when-point-moves t)
   (setq beacon-blink-when-window-change t)
   (setq beacon-blink-when-window-scrolls t)
   (beacon-mode 1))
-#+end_src
+```
 
-#+RESULTS:
-|   |
 
-** Emoji
+## Emoji {#emoji}
 
 Emoji support on emacs. :)
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (use-package emojify
   :hook (erc-mode . emojify-mode))
 (add-hook 'after-init-hook #'global-emojify-mode)
+```
 
-#+end_src
 
-** All the icons                                                     :icons:
+## All the icons <span class="tag"><span class="icons">icons</span></span> {#all-the-icons}
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (use-package all-the-icons)
-#+end_src
+```
 
-** Dashboard
+
+## Dashboard {#dashboard}
 
 A dashboard that's gonna open everytime you open emacs
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (use-package dashboard
   :ensure t
   :config
   (dashboard-setup-startup-hook))
-#+end_src
+```
 
-** Solarized Theme+Modeline
 
-#+begin_src emacs-lisp :tangle no
+## Solarized Theme+Modeline {#solarized-theme-plus-modeline}
+
+```emacs-lisp
 ;;; module-solarized.el --- solarized module for my emacs
 
 ;; Author: Mark Feller <mark.feller@member.fsf.org>
@@ -404,14 +348,14 @@ A dashboard that's gonna open everytime you open emacs
 (provide 'module-solarized)
 
 ;;; module-solarized.el ends here
+```
 
-#+end_src
 
-** Ewal
+## Ewal {#ewal}
 
 Based on pywal. You can find more about  pywal in arch.
 
-#+begin_src emacs-lisp :tangle no
+```emacs-lisp
 (use-package ewal
   :init (setq ewal-use-built-in-always-p nil
               ewal-use-built-in-on-failure-p t
@@ -439,13 +383,12 @@ Based on pywal. You can find more about  pywal in arch.
   :after (ewal-evil-cursors winum)
   :init (setq powerline-default-separator nil)
   :config (spaceline-spacemacs-theme))
-#+end_src
+```
 
-#+RESULTS:
 
-** Emacs Mini frame
+## Emacs Mini frame {#emacs-mini-frame}
 
-#+begin_src emacs-lisp
+```emacs-lisp
 (use-package mini-frame)
 (setq x-gtk-resize-child-frames 'resize-mode)
 (custom-set-variables
@@ -453,36 +396,4 @@ Based on pywal. You can find more about  pywal in arch.
    '((top . 400)
      (width . 0.7)
      (left . 0.5))))
-#+end_src
-
-#+RESULTS:
-
-
-* IMAGE and Code                                         :code:@coding:emacs:
-:PROPERTIES:
-:EXPORT_FILE_NAME: new-and-easy
-:EXPORT_DATE: 2023-01-17
-:END:
-
-Now there Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-
-
-
-** New and easy
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
-
-#+ATTR_ORG: :width 200 :height 200 :align center
-[[file:~/Desktop/portfolio/shuvr.me/static/images/mat.jpg]]
-
-** Code example
-
-#+begin_src typescript
-const v: int = 43;
-
-function vertical() {
-return 23;
-}
-
-v = vertical()
-
-#+end_src
+```

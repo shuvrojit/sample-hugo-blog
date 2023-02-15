@@ -17,11 +17,12 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<div class="container">
 {{ partial "header" . }}
+
+<div class="container">
 <main>
 {{ block "main" . }}{{ end }}
 </main>
-{{ partial "footer" . }}
 </div>
+{{ partial "footer" . }}
 </html>

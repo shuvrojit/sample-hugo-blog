@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<!-- <ul id="all-tags"> -->
+<!--   {{ range $name, $taxonomy := .Site.Taxonomies.tags }} -->
+<!--   <li><a href="{{ " /tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li> -->
+<!--   {{ end }} -->
+<!-- </ul> -->
+
+
+<div class="taxonomy">
+  <div class="tags">
+
+    <h1>Tags</h1>
+    <ul>
+      {{ range (where .Site.Pages "Section" "tags") }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+
+  </div>
+
+  <div class="categories">
+
+    <h1>Categories</h1>
+    <ul>
+      {{ range (where .Site.Pages "Section" "categories") }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+</div>
+{{ end }}

@@ -2,7 +2,7 @@
 title = "Write your first blog post"
 author = ["Shuvrojit Biswas"]
 date = 2023-01-17
-lastmod = 2023-01-16T23:53:31+06:00
+lastmod = 2023-01-22T05:37:29+06:00
 tags = ["hugo", "org"]
 categories = ["first"]
 draft = true

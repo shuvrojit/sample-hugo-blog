@@ -1,15 +1,9 @@
 {{ define "main" }}
-  <main>
-    <h1> this is a section</h1>
+<div class="about-me">
+<section >
       {{ .Content }}
-          <ul class="contents">
-          {{ range .Paginator.Pages }}
-              <li>{{.Title}}
-                  <div>
-                    {{ partial "summary.html" . }}
-                  </div>
-              </li>
-          {{ end }}
-          </ul>
-  </main>
+</section>
+<a href="mailto:jsuvro17@gmail.com"><button class="message-me">Message Me</button></a>
+
+</div>
 {{ end }}

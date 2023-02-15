@@ -1,18 +1,18 @@
 {{ define "main" }}
 <section>
   <h1>{{ .Title }}</h1>
-  <h3>{{ .Lastmod }}</h3>
+  <p>Last Modified: {{ .Lastmod.Format "Mon Jan 2, 2006" }}</p>
+  <p>Created At {{ .Date.Format "Mon Jan 2, 2006" }}</p>
+  <p>{{ .WordCount }} Words</p>
   <div>
     <article>
-      {{ .Content }}
+      {{ printf "%#v" $.Content }}
     </article>
   </div>
 </section>
 <aside>
   <div>
     <section>
-      <h4>{{ .Date.Format "Mon Jan 2, 2006" }}</h4>
-      <h5>{{ .WordCount }} Words</h5>
     </section>
   </div>
   <div>

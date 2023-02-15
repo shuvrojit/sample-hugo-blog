@@ -2,22 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --primary-color: #EFDBB2;
+    --heading-font-size: 1.2rem;
+    --single-header-font-size: 1.5rem;
+    --text-font-size: 1.5rem;
+    --navbar-hover-color: yellow;
+    --about-text-font: 'Open Sans';
+    --message-me-hover-color: aquamarine;
+    --summary-heading-font-size: 2.0rem;
+    --summary-meta-font: 1.5rem ;
+    --summary-body-font-size: 1rem;
+    --content-heading-size: 2.5rem;
+    --content-body-size: 1.1rem;
+    --content-tags-size: 1rem;
 }
 
 body {
-    background-color: #EFDBB2;
+    background-color: var(--primary-color);
+    font-size: var(--text-font-size)
 }
 
-li {
-    list-style: none;
+a {
+    text-decoration: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
-}
+/*--------------------------------------------*/
+/* HEADER SECTION */
+/*--------------------------------------------*/
 
 .logo {
     width: 3rem;
@@ -29,21 +40,211 @@ li {
     height: 2rem;
 }
 
-nav>ul {
+.navbar {
+    max-width: 70vw;
+    margin: 1rem auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;}
-
-nav>ul>li {
-    margin: 10px;
-    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav>ul>li>a {
-        text-decoration: none;
+.navbar>li {
+list-style: none;
+
 }
+.navbar a:hover {
+    background-color: var(--navbar-hover-color);
+}
+
+
+@media (max-width: 800px) {
+    .navbar {
+        max-width: 85vw;
+    }
+}
+
+
+
+/*--------------------------------------------*/
+/* ABOUT SECTION */
+/*--------------------------------------------*/
+
+
+.about-me {
+    font-family: var(--about-text-font);
+    max-width: 50vw;
+    margin: 100px auto;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.message-me {
+    width: 25rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    margin: 50px 17%;
+    background-color: var(--primary-color);
+}
+
+.message-me:hover {
+    background-color: var(--message-me-hover-color);
+}
+
+
+/*--------------------------------------------*/
+/* FOOTER SECTION */
+/*--------------------------------------------*/
+
 
 
 footer {
-    margin-top: auto;
+    margin: 50px 0 20px;
+}
+
+
+/*--------------------------------------------*/
+/* HOMEPAGE SECTION */
+/*--------------------------------------------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 60vw;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 90vw;
+    }
+}
+
+
+
+/*--------------------------------------------*/
+/* LIST SECTION */
+/*--------------------------------------------*/
+
+
+.page-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.list-page>h1 {
+    font-size: 2rem;
+}
+
+.summary {
+    text-align: center;
+}
+
+.summary-heading {
+    margin: 10px 0 0;
+    font-size: var(--summary-heading-font-size);
+}
+
+.post-meta {
+    font-size: var(--summary-meta-font);
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+/*--------------------------------------------*/
+/* SINGLE POST SECTION */
+/*--------------------------------------------*/
+
+.content h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: var(--content-heading-size);
+}
+
+
+
+.section-aside {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.table-of-contents>nav>ul {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+.table-of-contents>nav>ul>li {
+    margin: 3px 0;
+}
+
+code{
+    margin: 20px;
+}
+
+
+/*--------------------------------------------*/
+/* TAXONOMY SECTION */
+/*--------------------------------------------*/
+
+
+
+.taxonomy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+
+    border: 1px solid black;
+}
+
+
+.taxonomy>div>ul>li {
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.categories {
+    border: 1px solid black;
+    flex-grow: 2;
+    padding: 20px;
+    margin: 10px;
+}
+
+.tags {
+    border: 1px solid black;
+    flex-grow: 4;
+}
+
+.tags>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.taglists {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    border: 1px solid black;
 }

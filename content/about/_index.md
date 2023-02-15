@@ -8,6 +8,4 @@ title = "About Me"
   weight = 100
 +++
 
-## Nice building.
-
-I build large businesses
+Hi, My name is Shuvrojit Biswas. I am a software engineer. This is my unfiltered thoughts and stories whichever comes to my mind. If you find anything interesting we can talk about it. Just give me a quick mail and I will be happy to reply to you.

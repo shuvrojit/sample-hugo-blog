@@ -23,3 +23,7 @@ location = 'Dhaka, Bangladesh'
   logo = "/logo.png"
   searchLogo = "/search.svg"
 
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

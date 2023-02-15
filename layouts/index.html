@@ -1,7 +1,22 @@
 {{ define "main"}}
-{{ .Content }}
- {{ range .Site.RegularPages }}
-          {{ .Render "summary" }}
-      {{ end }}
+
+<div class="main">
+<h2>Posts</h2>
+<br>
+{{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+<p>{{ .Summary }}</p>
+<br>
+{{ end }}
+
+<h2>Stories</h2>
+<br>
+{{ range first 5 (where .Site.RegularPages "Section" "stories") }}
+<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+<p>{{ .Summary }}</p>
+<br>
+{{ end }}
+
+</div>
 
 {{ end }}
